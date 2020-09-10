@@ -1,0 +1,14 @@
+"""
+Write a program that prompts for a file name, then opens that file and reads
+through the file, and print the contents of the file in upper case. Use the file
+words.txt to produce the output.
+You can download the sample data at http://www.py4e.com/code3/words.txt
+"""
+# Use words.txt as the file name
+fname = input("Enter file name: ")
+fh = open(fname,"r")
+for line in fh:
+    up = line.upper()
+    print(up.rstrip())
+
+fh.close()
